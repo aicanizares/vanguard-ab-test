@@ -1,0 +1,1458 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0415.1018                               -->
+<workbook original-version='18.1' source-build='2025.1.1 (20251.25.0415.1018)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (df_merged)' inline='true' name='federated.1pvr8zh132gwa71aqilz10sbz00m' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='df_merged' name='excel-direct.1ele9ri0eculvv14dz8sd0n9qzuf'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/aican/2025-Ironhack/GitHub/Unit5-2025-CW19-20/vanguard-ab-test/df_merged.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1ele9ri0eculvv14dz8sd0n9qzuf' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:S10001:no:A1:S10001:0' header='yes' outcome='6'>
+            <column datatype='integer' name='client_id' ordinal='0' />
+            <column datatype='integer' name='clnt_tenure_yr' ordinal='1' />
+            <column datatype='integer' name='clnt_tenure_mnth' ordinal='2' />
+            <column datatype='real' name='clnt_age' ordinal='3' />
+            <column datatype='string' name='gendr' ordinal='4' />
+            <column datatype='integer' name='num_accts' ordinal='5' />
+            <column datatype='real' name='bal' ordinal='6' />
+            <column datatype='integer' name='calls_6_mnth' ordinal='7' />
+            <column datatype='integer' name='logons_6_mnth' ordinal='8' />
+            <column datatype='string' name='visitor_id' ordinal='9' />
+            <column datatype='string' name='visit_id' ordinal='10' />
+            <column datatype='string' name='process_step' ordinal='11' />
+            <column datatype='datetime' name='date_time' ordinal='12' />
+            <column datatype='string' name='Variation' ordinal='13' />
+            <column datatype='integer' name='Confirm' ordinal='14' />
+            <column datatype='string' name='previous_step' ordinal='15' />
+            <column datatype='integer' name='error' ordinal='16' />
+            <column datatype='integer' name='error_visit' ordinal='17' />
+            <column datatype='integer' name='error_customer' ordinal='18' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:S10001:no:A1:S10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>client_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[client_id]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>client_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_2CDE7C074D954132A23EB7367E0F26DF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clnt_tenure_yr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[clnt_tenure_yr]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>clnt_tenure_yr</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_2CDE7C074D954132A23EB7367E0F26DF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clnt_tenure_mnth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[clnt_tenure_mnth]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>clnt_tenure_mnth</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_2CDE7C074D954132A23EB7367E0F26DF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clnt_age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[clnt_age]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>clnt_age</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_2CDE7C074D954132A23EB7367E0F26DF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gendr</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[gendr]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>gendr</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_2CDE7C074D954132A23EB7367E0F26DF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_accts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_accts]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>num_accts</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_2CDE7C074D954132A23EB7367E0F26DF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bal</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bal]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>bal</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_2CDE7C074D954132A23EB7367E0F26DF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calls_6_mnth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calls_6_mnth]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>calls_6_mnth</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_2CDE7C074D954132A23EB7367E0F26DF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>logons_6_mnth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[logons_6_mnth]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>logons_6_mnth</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_2CDE7C074D954132A23EB7367E0F26DF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>visitor_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[visitor_id]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>visitor_id</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_2CDE7C074D954132A23EB7367E0F26DF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>visit_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[visit_id]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>visit_id</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_2CDE7C074D954132A23EB7367E0F26DF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>process_step</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[process_step]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>process_step</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_2CDE7C074D954132A23EB7367E0F26DF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_time</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date_time]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>date_time</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_2CDE7C074D954132A23EB7367E0F26DF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Variation</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Variation]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Variation</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_2CDE7C074D954132A23EB7367E0F26DF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Confirm</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Confirm]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Confirm</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_2CDE7C074D954132A23EB7367E0F26DF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>previous_step</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[previous_step]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>previous_step</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_2CDE7C074D954132A23EB7367E0F26DF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>error</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[error]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>error</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_2CDE7C074D954132A23EB7367E0F26DF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>error_visit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[error_visit]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>error_visit</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_2CDE7C074D954132A23EB7367E0F26DF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>error_customer</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[error_customer]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>error_customer</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_2CDE7C074D954132A23EB7367E0F26DF]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_2CDE7C074D954132A23EB7367E0F26DF]' role='measure' type='quantitative' />
+      <column caption='Bal' datatype='real' name='[bal]' role='measure' type='quantitative' />
+      <column caption='Calls 6 Mnth' datatype='integer' name='[calls_6_mnth]' role='measure' type='quantitative' />
+      <column caption='Client Id' datatype='integer' name='[client_id]' role='dimension' type='ordinal' />
+      <column caption='Clnt Age' datatype='real' name='[clnt_age]' role='measure' type='quantitative' />
+      <column caption='Clnt Tenure Mnth' datatype='integer' name='[clnt_tenure_mnth]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Clnt Tenure Yr' datatype='integer' name='[clnt_tenure_yr]' role='dimension' type='ordinal' />
+      <column caption='Date Time' datatype='datetime' name='[date_time]' role='dimension' type='ordinal' />
+      <column caption='Error' datatype='integer' name='[error]' role='measure' type='quantitative' />
+      <column caption='Error Customer' datatype='integer' name='[error_customer]' role='measure' type='quantitative' />
+      <column caption='Error Visit' datatype='integer' name='[error_visit]' role='measure' type='quantitative' />
+      <column caption='Gendr' datatype='string' name='[gendr]' role='dimension' type='nominal' />
+      <column caption='Logons 6 Mnth' datatype='integer' name='[logons_6_mnth]' role='measure' type='quantitative' />
+      <column caption='Num Accts' datatype='integer' name='[num_accts]' role='measure' type='quantitative' />
+      <column caption='Previous Step' datatype='string' name='[previous_step]' role='dimension' type='nominal' />
+      <column caption='Process Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+      <column caption='Visit Id' datatype='string' name='[visit_id]' role='dimension' type='nominal' />
+      <column caption='Visitor Id' datatype='string' name='[visitor_id]' role='dimension' type='nominal' />
+      <column-instance column='[gendr]' derivation='None' name='[none:gendr:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:gendr:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;X&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;U&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_2CDE7C074D954132A23EB7367E0F26DF'>
+            <properties context=''>
+              <relation connection='excel-direct.1ele9ri0eculvv14dz8sd0n9qzuf' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:S10001:no:A1:S10001:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='client_id' ordinal='0' />
+                  <column datatype='integer' name='clnt_tenure_yr' ordinal='1' />
+                  <column datatype='integer' name='clnt_tenure_mnth' ordinal='2' />
+                  <column datatype='real' name='clnt_age' ordinal='3' />
+                  <column datatype='string' name='gendr' ordinal='4' />
+                  <column datatype='integer' name='num_accts' ordinal='5' />
+                  <column datatype='real' name='bal' ordinal='6' />
+                  <column datatype='integer' name='calls_6_mnth' ordinal='7' />
+                  <column datatype='integer' name='logons_6_mnth' ordinal='8' />
+                  <column datatype='string' name='visitor_id' ordinal='9' />
+                  <column datatype='string' name='visit_id' ordinal='10' />
+                  <column datatype='string' name='process_step' ordinal='11' />
+                  <column datatype='datetime' name='date_time' ordinal='12' />
+                  <column datatype='string' name='Variation' ordinal='13' />
+                  <column datatype='integer' name='Confirm' ordinal='14' />
+                  <column datatype='string' name='previous_step' ordinal='15' />
+                  <column datatype='integer' name='error' ordinal='16' />
+                  <column datatype='integer' name='error_visit' ordinal='17' />
+                  <column datatype='integer' name='error_customer' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (visits_confirm_df)' inline='true' name='federated.0wdno34044wkhf1ebvfp91eq5j6h' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='visits_confirm_df' name='excel-direct.1434pt015t6ptm1c3wyar0mcibkn'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/aican/2025-Ironhack/GitHub/Unit5-2025-CW19-20/vanguard-ab-test/visits_confirm_df.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1434pt015t6ptm1c3wyar0mcibkn' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:D10001:no:A1:D10001:0' header='yes' outcome='6'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='visit_id' ordinal='1' />
+            <column datatype='string' name='Variation' ordinal='2' />
+            <column datatype='integer' name='Confirm' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D10001:no:A1:D10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_21CA2BCD7E2C49D4805A6C3D1C231BD9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>visit_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[visit_id]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>visit_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_21CA2BCD7E2C49D4805A6C3D1C231BD9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Variation</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Variation]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Variation</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_21CA2BCD7E2C49D4805A6C3D1C231BD9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Confirm</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Confirm]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Confirm</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_21CA2BCD7E2C49D4805A6C3D1C231BD9]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' hidden='true' name='[F1]' role='measure' type='quantitative' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_21CA2BCD7E2C49D4805A6C3D1C231BD9]' role='measure' type='quantitative' />
+      <column caption='Visit Id' datatype='string' name='[visit_id]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/aican/AppData/Local/Temp/TableauTemp/#TableauTemp_1e870b319esz6q18zu1tz08yqfda.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/20/2025 02:16:36 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>visit_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[visit_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>visit_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>69303</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Sheet1_21CA2BCD7E2C49D4805A6C3D1C231BD9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Variation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Variation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Variation</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Sheet1_21CA2BCD7E2C49D4805A6C3D1C231BD9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Confirm</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Confirm]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Confirm</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_21CA2BCD7E2C49D4805A6C3D1C231BD9]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_21CA2BCD7E2C49D4805A6C3D1C231BD9'>
+            <properties context=''>
+              <relation connection='excel-direct.1434pt015t6ptm1c3wyar0mcibkn' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:D10001:no:A1:D10001:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='visit_id' ordinal='1' />
+                  <column datatype='string' name='Variation' ordinal='2' />
+                  <column datatype='integer' name='Confirm' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='AGE PENDING'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{19918F7E-EA9B-4A09-9141-4873F3EA8774}' />
+    </worksheet>
+    <worksheet name='DURATION STEPS PENDING'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D702F0E8-DEBD-456C-8F54-1E8450F3095B}' />
+    </worksheet>
+    <worksheet name='completion-rate-visits'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Completion Rate per Variation (visit_ids)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (visits_confirm_df)' name='federated.0wdno34044wkhf1ebvfp91eq5j6h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0wdno34044wkhf1ebvfp91eq5j6h'>
+            <column datatype='integer' name='[Confirm]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column-instance column='[Confirm]' derivation='Avg' name='[avg:Confirm:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0wdno34044wkhf1ebvfp91eq5j6h].[none:Variation:nk]' value='265' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0wdno34044wkhf1ebvfp91eq5j6h].[none:Variation:nk]' />
+              <text column='[federated.0wdno34044wkhf1ebvfp91eq5j6h].[avg:Confirm:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0wdno34044wkhf1ebvfp91eq5j6h].[avg:Confirm:qk]</rows>
+        <cols>[federated.0wdno34044wkhf1ebvfp91eq5j6h].[none:Variation:nk]</cols>
+      </table>
+      <simple-id uuid='{51515901-93AF-43CB-BC0C-FA90467C2132}' />
+    </worksheet>
+    <worksheet name='confirms-over-time-day'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Confirms per Day over Time</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (df_merged)' name='federated.1pvr8zh132gwa71aqilz10sbz00m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pvr8zh132gwa71aqilz10sbz00m'>
+            <column datatype='integer' name='[Confirm]' role='measure' type='quantitative' />
+            <column-instance column='[Confirm]' derivation='Count' name='[cnt:Confirm:qk]' pivot='key' type='quantitative' />
+            <column caption='Date Time' datatype='datetime' name='[date_time]' role='dimension' type='ordinal' />
+            <column-instance column='[date_time]' derivation='Day' name='[dy:date_time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[date_time]' derivation='Month' name='[mn:date_time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1pvr8zh132gwa71aqilz10sbz00m].[cnt:Confirm:qk]' field-type='quantitative' max='36474' min='-607' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1pvr8zh132gwa71aqilz10sbz00m].[cnt:Confirm:qk]</rows>
+        <cols>([federated.1pvr8zh132gwa71aqilz10sbz00m].[mn:date_time:ok] / [federated.1pvr8zh132gwa71aqilz10sbz00m].[dy:date_time:ok])</cols>
+      </table>
+      <simple-id uuid='{4659FCF4-3A7F-466D-A522-11B8D526A899}' />
+    </worksheet>
+    <worksheet name='confirms-per-month'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Confirms per Month</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (df_merged)' name='federated.1pvr8zh132gwa71aqilz10sbz00m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pvr8zh132gwa71aqilz10sbz00m'>
+            <column datatype='integer' name='[Confirm]' role='measure' type='quantitative' />
+            <column-instance column='[Confirm]' derivation='Count' name='[cnt:Confirm:qk]' pivot='key' type='quantitative' />
+            <column caption='Date Time' datatype='datetime' name='[date_time]' role='dimension' type='ordinal' />
+            <column-instance column='[date_time]' derivation='Month' name='[mn:date_time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1pvr8zh132gwa71aqilz10sbz00m].[cnt:Confirm:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1pvr8zh132gwa71aqilz10sbz00m].[mn:date_time:ok]</cols>
+      </table>
+      <simple-id uuid='{77A2359E-1EBE-485C-AE90-4B1C15C5E59F}' />
+    </worksheet>
+    <worksheet name='error-rate-clients'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Error Rate per Variation (client_ids with at least 1 error in 1 of their visits)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (df_merged)' name='federated.1pvr8zh132gwa71aqilz10sbz00m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pvr8zh132gwa71aqilz10sbz00m'>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column-instance column='[error_customer]' derivation='Avg' name='[avg:error_customer:qk]' pivot='key' type='quantitative' />
+            <column caption='Error Customer' datatype='integer' name='[error_customer]' role='measure' type='quantitative' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pvr8zh132gwa71aqilz10sbz00m].[none:Variation:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1pvr8zh132gwa71aqilz10sbz00m].[avg:error_customer:qk]</rows>
+        <cols>[federated.1pvr8zh132gwa71aqilz10sbz00m].[none:Variation:nk]</cols>
+      </table>
+      <simple-id uuid='{D1EA188B-A664-4A6E-B2B1-855F29D5D03F}' />
+    </worksheet>
+    <worksheet name='error-rate-visits'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Error Rate per Variation (visit_ids with at least 1 error)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (df_merged)' name='federated.1pvr8zh132gwa71aqilz10sbz00m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pvr8zh132gwa71aqilz10sbz00m'>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column-instance column='[error_visit]' derivation='Avg' name='[avg:error_visit:qk]' pivot='key' type='quantitative' />
+            <column caption='Error Visit' datatype='integer' name='[error_visit]' role='measure' type='quantitative' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pvr8zh132gwa71aqilz10sbz00m].[none:Variation:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1pvr8zh132gwa71aqilz10sbz00m].[avg:error_visit:qk]</rows>
+        <cols>[federated.1pvr8zh132gwa71aqilz10sbz00m].[none:Variation:nk]</cols>
+      </table>
+      <simple-id uuid='{0A637013-84DB-42B7-8B67-68F4BC356818}' />
+    </worksheet>
+    <worksheet name='gender'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Gender Distribution of Clients</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (df_merged)' name='federated.1pvr8zh132gwa71aqilz10sbz00m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pvr8zh132gwa71aqilz10sbz00m'>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column caption='Client Id' datatype='integer' name='[client_id]' role='dimension' type='ordinal' />
+            <column-instance column='[client_id]' derivation='CountD' name='[ctd:client_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Gendr' datatype='string' name='[gendr]' role='dimension' type='nominal' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gendr]' derivation='None' name='[none:gendr:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1pvr8zh132gwa71aqilz10sbz00m].[none:gendr:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:gendr:nk]' member='&quot;F&quot;' />
+              <groupfilter function='member' level='[none:gendr:nk]' member='&quot;M&quot;' />
+              <groupfilter function='member' level='[none:gendr:nk]' member='&quot;U&quot;' />
+              <groupfilter function='member' level='[none:gendr:nk]' member='&quot;X&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1pvr8zh132gwa71aqilz10sbz00m].[none:gendr:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pvr8zh132gwa71aqilz10sbz00m].[none:gendr:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1pvr8zh132gwa71aqilz10sbz00m].[ctd:client_id:qk]</rows>
+        <cols>([federated.1pvr8zh132gwa71aqilz10sbz00m].[none:Variation:nk] / [federated.1pvr8zh132gwa71aqilz10sbz00m].[none:gendr:nk])</cols>
+      </table>
+      <simple-id uuid='{F1B85AFC-F898-49D3-9903-9BCAA79E4C52}' />
+    </worksheet>
+    <worksheet name='tenure'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Tenure Distribution of Clients in Years</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (df_merged)' name='federated.1pvr8zh132gwa71aqilz10sbz00m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pvr8zh132gwa71aqilz10sbz00m'>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column caption='Client Id' datatype='integer' name='[client_id]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Clnt Tenure Yr' datatype='integer' name='[clnt_tenure_yr]' role='dimension' type='ordinal' />
+            <column-instance column='[client_id]' derivation='CountD' name='[ctd:client_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[clnt_tenure_yr]' derivation='None' name='[none:clnt_tenure_yr:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1pvr8zh132gwa71aqilz10sbz00m].[none:Variation:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1pvr8zh132gwa71aqilz10sbz00m].[ctd:client_id:qk]</rows>
+        <cols>[federated.1pvr8zh132gwa71aqilz10sbz00m].[none:clnt_tenure_yr:ok]</cols>
+      </table>
+      <simple-id uuid='{64D8A1C9-B168-4675-A8F3-13BFB5E09979}' />
+    </worksheet>
+    <worksheet name='unique-clients-per-variation'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (df_merged)' name='federated.1pvr8zh132gwa71aqilz10sbz00m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pvr8zh132gwa71aqilz10sbz00m'>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column caption='Client Id' datatype='integer' name='[client_id]' role='dimension' type='ordinal' />
+            <column-instance column='[client_id]' derivation='CountD' name='[ctd:client_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1pvr8zh132gwa71aqilz10sbz00m].[ctd:client_id:qk]</rows>
+        <cols>[federated.1pvr8zh132gwa71aqilz10sbz00m].[none:Variation:nk]</cols>
+      </table>
+      <simple-id uuid='{8E292CA1-8AFF-443B-96A7-B6EFD72262FA}' />
+    </worksheet>
+    <worksheet name='unique-visits-per-variation'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (df_merged)' name='federated.1pvr8zh132gwa71aqilz10sbz00m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pvr8zh132gwa71aqilz10sbz00m'>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column-instance column='[visit_id]' derivation='CountD' name='[ctd:visit_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+            <column caption='Visit Id' datatype='string' name='[visit_id]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1pvr8zh132gwa71aqilz10sbz00m].[ctd:visit_id:qk]</rows>
+        <cols>[federated.1pvr8zh132gwa71aqilz10sbz00m].[none:Variation:nk]</cols>
+      </table>
+      <simple-id uuid='{1E772839-16CE-4BB0-8263-834DB4E40DA3}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='demographics-db'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Client Demographics</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98128' id='12' param='vert' type-v2='layout-flow' w='99150' x='425' y='936'>
+            <zone h='6784' id='13' type-v2='title' w='99150' x='425' y='936'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='35088' id='3' name='AGE PENDING' w='99150' x='425' y='7720'>
+              <layout-cache type-h='scalable' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='56256' id='9' param='horz' type-v2='layout-flow' w='99150' x='425' y='42808'>
+              <zone h='56256' id='7' type-v2='layout-basic' w='99150' x='425' y='42808'>
+                <zone h='56256' id='5' name='tenure' w='49575' x='50000' y='42808'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='56256' id='6' name='gender' w='49575' x='425' y='42808'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run>Client Demographics</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='31' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98272' id='30' param='vert' type-v2='layout-flow' w='99002' x='499' y='864'>
+                <zone h='6264' id='13' type-v2='title' w='99002' x='499' y='864'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='251' h='32397' id='3' is-fixed='true' name='AGE PENDING' w='99002' x='499' y='7128'>
+                  <layout-cache minheight='0' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='59611' id='6' is-fixed='true' name='gender' w='49501' x='499' y='39525'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='59611' id='5' is-fixed='true' name='tenure' w='49501' x='50000' y='39525'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1920FA30-CC6D-4CF7-A8A1-EAAE95C55C4F}' />
+    </dashboard>
+  </dashboards>
+  <windows show-side-pane='false' source-height='75'>
+    <window class='worksheet' name='gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='48'>
+            <card type='columns' />
+          </strip>
+          <strip size='48'>
+            <card type='rows' />
+          </strip>
+          <strip size='45'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='240'>
+            <card pane-specification-id='0' param='[federated.1pvr8zh132gwa71aqilz10sbz00m].[none:gendr:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{9C0CA0C9-AC27-4E78-8E53-E7574178DA00}' />
+    </window>
+    <window class='worksheet' name='AGE PENDING'>
+      <cards>
+        <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='45'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9A04678B-1029-4ED1-8BE5-5DCF49175ECE}' />
+    </window>
+    <window class='worksheet' name='tenure'>
+      <cards>
+        <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='240'>
+            <card pane-specification-id='0' param='[federated.1pvr8zh132gwa71aqilz10sbz00m].[none:Variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{FA70DB39-3B76-4F3B-9A47-CA79A8AB80BC}' />
+    </window>
+    <window class='dashboard' name='demographics-db'>
+      <viewpoints>
+        <viewpoint name='AGE PENDING'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='gender'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='tenure'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{724622C9-8AFF-4EC0-8DFA-BD8957E441BA}' />
+    </window>
+    <window class='worksheet' name='completion-rate-visits'>
+      <cards>
+        <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='45'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='240'>
+            <card pane-specification-id='0' param='[federated.0wdno34044wkhf1ebvfp91eq5j6h].[none:Variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{25098B9E-A9A6-453F-B599-86F074F700EB}' />
+    </window>
+    <window class='worksheet' name='DURATION STEPS PENDING'>
+      <cards>
+        <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='45'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4620AE35-E221-4F17-AA43-E306DBFE619C}' />
+    </window>
+    <window class='worksheet' name='error-rate-clients'>
+      <cards>
+        <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='45'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='240'>
+            <card pane-specification-id='0' param='[federated.1pvr8zh132gwa71aqilz10sbz00m].[none:Variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{8956A1A0-6844-43DC-B83A-6DE0EC0F21D0}' />
+    </window>
+    <window class='worksheet' name='error-rate-visits'>
+      <cards>
+        <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='45'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='240'>
+            <card pane-specification-id='0' param='[federated.1pvr8zh132gwa71aqilz10sbz00m].[none:Variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{0F6B4637-1B2B-4D93-A44E-A6819B9BD617}' />
+    </window>
+    <window class='worksheet' name='unique-visits-per-variation'>
+      <cards>
+        <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='45'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{62DFCAAA-22B8-4F53-B0C9-64E3D3A37727}' />
+    </window>
+    <window class='worksheet' maximized='true' name='unique-clients-per-variation'>
+      <cards>
+        <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='48'>
+            <card type='columns' />
+          </strip>
+          <strip size='48'>
+            <card type='rows' />
+          </strip>
+          <strip size='45'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{4B03D681-5CF0-4A0C-9B14-3B4D59557438}' />
+    </window>
+    <window class='worksheet' name='confirms-over-time-day'>
+      <cards>
+        <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='48'>
+            <card type='columns' />
+          </strip>
+          <strip size='48'>
+            <card type='rows' />
+          </strip>
+          <strip size='46'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{B16E7A99-1484-46A6-A8A4-48AC4F1A5CBA}' />
+    </window>
+    <window class='worksheet' name='confirms-per-month'>
+      <cards>
+        <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='48'>
+            <card type='columns' />
+          </strip>
+          <strip size='48'>
+            <card type='rows' />
+          </strip>
+          <strip size='45'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{40440A49-D8AA-4EF3-B51D-4CFA678E9B5C}' />
+    </window>
+  </windows>
+</workbook>
